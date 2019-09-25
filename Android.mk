@@ -16,6 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter s3ve3g s3ve3gxx s3ve3gjv s3ve3gds,$(TARGET_DEVICE)),)
+ifneq ($(filter milletwifi millet3g milletlte,$(TARGET_DEVICE)),)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

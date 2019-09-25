@@ -16,4 +16,4 @@
 
 # Board specific SELinux policy variable definitions
 BOARD_SEPOLICY_DIRS += \
-    device/samsung/s3ve3g-common/sepolicy/common
+    device/samsung/millet-common/sepolicy/common

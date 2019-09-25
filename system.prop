@@ -92,7 +92,7 @@ mm.enable.qcom_parser=37491
 ro.vendor.qti.am.reschedule_service=true
 
 # NFC
-ro.nfc.port=I2C
+# ro.nfc.port=I2C
 
 # Perf
 ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so

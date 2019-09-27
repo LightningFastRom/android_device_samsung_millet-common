@@ -19,7 +19,7 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Samsung Galaxy S III Neo"
+#define BTM_DEF_LOCAL_NAME   "Samsung Galaxy Tab 4"
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
 
 #define BTM_WBS_INCLUDED TRUE       /* Enable WBS */

@@ -45,15 +45,6 @@ PRODUCT_AAPT_PREF_CONFIG := mdpi
 PRODUCT_PACKAGES += \
     SamsungDoze
 
-# FlipFlap
-# PRODUCT_PACKAGES += \
-#    FlipFlap
-
-# FM
-# PRODUCT_PACKAGES += \
-#    FMRadio \
-#    libfmjni
-
 # IPv6 tethering
 PRODUCT_PACKAGES += \
     ebtables \

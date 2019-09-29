@@ -20,9 +20,6 @@ COMMON_PATH := device/samsung/millet-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
-# Assert
-# TARGET_OTA_ASSERT_DEVICE := milletwifi, millet3g, milletlte
-
 # Audio
 USE_CUSTOM_AUDIO_POLICY := 1
 

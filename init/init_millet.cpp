@@ -49,39 +49,39 @@ void connect_properties(std::string network, std::string type)
          /* GSM */
          if (type == "3G") {
             /* 3G */
-            property_set("ro.telephony.default_network", "3");
-            property_set("telephony.lteOnGsmDevice", "0");
+            property_override("ro.telephony.default_network", "3");
+            property_override("telephony.lteOnGsmDevice", "0");
         } else if (network =="LTE") {
             /* LTE */
-            property_set("ro.telephony.default_network", "9");
-            property_set("telephony.lteOnGsmDevice", "1");
+            property_override("ro.telephony.default_network", "9");
+            property_override("telephony.lteOnGsmDevice", "1");
         }
     } else if (network =="cdma") {
          /* CDMA */            
         if (network =="LTE") {
             /* LTE */
-            property_set("ro.telephony.default_network", "9");
-            property_set("telephony.lteOnGsmDevice", "1");
+            property_override("ro.telephony.default_network", "9");
+            property_override("telephony.lteOnGsmDevice", "1");
         } else {
             /* 3G */
-            property_set("ro.telephony.default_network", "3");
-            property_set("telephony.lteOnGsmDevice", "0");
+            property_override("ro.telephony.default_network", "3");
+            property_override("telephony.lteOnGsmDevice", "0");
         }
     } else if (network =="wcdma") {
          /* WCDMA */
         if (network =="LTE") {
             /* LTE */
-            property_set("ro.telephony.default_network", "9");
-            property_set("telephony.lteOnGsmDevice", "1");
+            property_override("ro.telephony.default_network", "9");
+            property_override("telephony.lteOnGsmDevice", "1");
         } else {
             /* 3G */
-            property_set("ro.telephony.default_network", "3");
-            property_set("telephony.lteOnGsmDevice", "0");
+            property_override("ro.telephony.default_network", "3");
+            property_override("telephony.lteOnGsmDevice", "0");
         }
     } else  {
         /* WiFi Only */
-        property_set("ro.carrier", "wifi-only");
-        property_set("ro.radio.noril", "1");
+        property_override("ro.carrier", "wifi-only");
+        property_override("ro.radio.noril", "1");
 	}
 }
 

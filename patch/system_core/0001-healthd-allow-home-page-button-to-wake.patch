@@ -1,25 +1,26 @@
-From 80f3ad629330ed2525512ae3a1439f4d27b4088b Mon Sep 17 00:00:00 2001
-From: sub77 <sub77@ymail.com>
-Date: Fri, 3 Jun 2016 20:31:00 -0500
-Subject: [PATCH] healthd: allow home(page) button to wake
+From 7e7049cfa319ebad1e48c7a1b1c6d90e0ccf91b4 Mon Sep 17 00:00:00 2001
+From: Kevin Castellanos <castellanos.kevin@rocketmail.com>
+Date: Mon, 28 Oct 2019 21:52:29 -0400
+Subject: [PATCH] healthd allow home page button to wake
 
-Change-Id: I439040060a09ba206a123c736d729ee1f6d2cdb6
+[PATCH] healthd: allow home(page) button to wake
 ---
- healthd/healthd_mode_charger.cpp | 1 +
- 1 file changed, 1 insertion(+)
+ healthd/healthd_mode_charger.cpp | 2 ++
+ 1 file changed, 2 insertions(+)
 
 diff --git a/healthd/healthd_mode_charger.cpp b/healthd/healthd_mode_charger.cpp
-index eb93d6a..26d3fc0 100644
+index 56a9f8691..142f08505 100644
 --- a/healthd/healthd_mode_charger.cpp
 +++ b/healthd/healthd_mode_charger.cpp
-@@ -660,6 +660,7 @@ static void handle_input_state(struct charger *charger, int64_t now)
- {
+@@ -467,6 +467,8 @@ static void process_key(charger* charger, int code, int64_t now) {
+ 
+ static void handle_input_state(charger* charger, int64_t now) {
      process_key(charger, KEY_POWER, now);
-     process_key(charger, KEY_HOME, now);
-+    process_key(charger, KEY_HOMEPAGE, now);
++	process_key(charger, KEY_HOME, now);
++	process_key(charger, KEY_HOMEPAGE, now);
  
      if (charger->next_key_check != -1 && now > charger->next_key_check)
          charger->next_key_check = -1;
 -- 
-1.9.1
+2.17.2 (Apple Git-113)
 
